@@ -23,7 +23,7 @@ const App = () => {
         </div>
       </div>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
