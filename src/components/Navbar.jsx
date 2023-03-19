@@ -8,6 +8,7 @@ import { logo, menu, close } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
 
   return (
     <nav
@@ -41,7 +42,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(Link.title)}
             >
-              <a href={`${Link.id}`}>{Link.title}</a>
+              <a href={`#${Link.id}`}>{Link.title}</a>
             </li>
           ))}
         </ul>
@@ -69,7 +70,7 @@ const Navbar = () => {
                   setActive(Link.title);
                 }}
               >
-                <a href={`${Link.id}`}>{Link.title}</a>
+                <a href={`#${Link.id}`}>{Link.title}</a>
               </li>
             ))}
           </ul>

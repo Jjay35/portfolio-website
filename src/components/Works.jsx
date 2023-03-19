@@ -1,3 +1,4 @@
+import React from "react";
 import Tilt from 'react-tilt';
 import {motion} from 'framer-motion';
 
@@ -47,7 +48,7 @@ const ProjectCard = ({index, name ,description, tags, image, source_code_link}) 
         
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+            <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
@@ -61,8 +62,8 @@ const Works = () => {
   return (
     <>
       <motion.div variant={textVariant()}>
-      <p className={styles.sectionSubText}>My Work</p>
-        <h2 className={styles.sectionHeadText}>Projects</h2>
+      <p className={`${styles.sectionSubText}`}>My Work</p>
+        <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -71,7 +72,7 @@ const Works = () => {
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
           >
             Following projects showcase my skill and experience through real-world examples
-            of my work.
+            of my work. 
           </motion.p>
       </div>
 
@@ -88,4 +89,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "works");

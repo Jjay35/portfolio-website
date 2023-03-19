@@ -21,6 +21,7 @@ import java from "./tech/java.png";
 import c from "./tech/c.jpeg";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
+import python from "./tech/python.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
@@ -30,8 +31,11 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
+import pokeclassic from './PokeClassic.png'
 import jobit from "./jobit.png";
+import movieland from './movieland.png';
 import tripguide from "./tripguide.png";
+import adviceprovider from "./adviceprovider.png";
 
 export {
   logo,
@@ -56,6 +60,7 @@ export {
   reactjs,
   redux,
   tailwind,
+  python,
   typescript,
   threejs,
   meta,
@@ -63,6 +68,9 @@ export {
   starbucks,
   tesla,
   carrent,
+  pokeclassic,
   jobit,
+  movieland,
   tripguide,
+  adviceprovider,
 };
